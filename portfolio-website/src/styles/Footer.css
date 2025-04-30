@@ -1,0 +1,41 @@
+.footer{
+    box-shadow: inset  0 1px 0 0 #f9f9f9;
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer p{
+    color: #f9f9f9;
+  }  
+
+  .copyright{
+    color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+
+  .skills{
+    display: flex;
+    text-align: center;
+  }
+
+  .skills ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+  }
+  .skills li{
+    list-style-type: none;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .updates{
+    display: flex;
+    text-align: end;
+  }

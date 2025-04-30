@@ -1,0 +1,103 @@
+.navbar {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  z-index: 100;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  width: 20%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span{
+  color: #f9f9f9;
+}
+.navigation{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav-links {
+  width: 50%;
+  display: flex;
+  align-content: space-between;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.action{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border-radius: 5px;
+}
+.cta{
+  width: 100%;
+  padding: 6px 20px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  background: red;
+  color: #fff;
+}
+.cta span{
+  width: 100%;
+  text-align: center;
+}
+
+.cta:hover{
+ background: wheat;
+ transform: scale(1.02);
+ color: #1b1a1a;
+}
+
+
+.nav-links a:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
