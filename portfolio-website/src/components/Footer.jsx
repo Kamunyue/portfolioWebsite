@@ -4,13 +4,13 @@ function Footer() {
     return(
         <div className="footer">
           <div className="copyright">
-            <p>&copy; 2023 Kennedy Chege. All rights reserved.</p>
+            <p><span>.</span> &copy; 2025 Kennedy Chege <span>.</span> All rights reserved <span>.</span> </p>
           </div>
           <div className="skills">
-            <p>Graphic Designer . Video Editor</p>            
+            <p> <span>.</span> Graphic Designer <span>.</span> Video Editor <span>.</span> </p>            
           </div>
           <div className="updates">
-            <p>Latest Update 30.04.25</p>
+            <p> <span>.</span> Latest Update 30 <span>.</span> 04 <span>.</span> 25 <span>.</span> </p>
           </div>          
         </div>
     )

@@ -19,7 +19,7 @@ function Navbar() {
       <div className="action">
         <Link to="/contact">
           <div className="cta">
-            <span>Contact me</span>
+            <p>Contact me</p>
           </div>
         </Link>
       </div>

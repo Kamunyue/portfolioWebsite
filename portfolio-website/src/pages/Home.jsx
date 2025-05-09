@@ -19,13 +19,9 @@ function Home() {
             <h1>KENNEDY</h1>
           </div>
           <div className="intro-name2">
-            <h1>CHEGE</h1>
+            <h1>KAMUNYUE<span>.</span></h1>
           </div>
           
-          
-          {/* <a href="/portfolio" className="cta-button">
-            View My Work
-          </a> */}
         </div>
 
       </motion.div>

@@ -3,7 +3,7 @@ import "../styles/ProjectGrid.css";
 
 
 const projects = [
-    { id: 1, title: 'Project 1', image: '/project1.jpg', description: 'Branding Design.' },
+    { id: 1, title: 'Project 1', image: '/vision.jpg', description: 'Branding Design.' },
     { id: 2, title: 'Project 2', image: '/project2.jpg', description: 'Poster Design' },
     { id: 3, title: 'Project 3', image: '/amine.jpeg', description: 'UI/UX mockup' },
     { id: 4, title: 'Project 4', image: '/project2.jpg', description: 'Illustration' },

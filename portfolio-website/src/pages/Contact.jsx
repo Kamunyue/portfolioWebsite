@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import '../styles/Contact.css';
+import Footer from '../components/Footer';
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -13,7 +14,8 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, formData);
+      const postUrl = process.env.MONGO_URI
+      await axios.post(postUrl, formData);
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
@@ -22,9 +24,14 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="contact-container">
+      <div className="contact">
+      <div className="user-input">
+      <div className="contact-heading">
+        <h2>Contact Me<span>.</span></h2>
+      </div>
+      <div className="form">
+        <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -36,7 +43,7 @@ function Contact() {
         <input
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder="Your E-mail"
           value={formData.email}
           onChange={handleChange}
           required
@@ -50,8 +57,18 @@ function Contact() {
         ></textarea>
         <button type="submit">Send Message</button>
       </form>
+      </div>
+      </div>
       {status && <p>{status}</p>}
+
+      
     </div>
+    <Footer />
+    </div>
+      
+      
+      
+    
   );
 }
 

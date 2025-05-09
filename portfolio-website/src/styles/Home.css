@@ -1,6 +1,5 @@
 .home {
-    height: 92vh;
-    background: #000;
+    height: 90vh;
     display: flex;
     flex-direction: column;
   }
@@ -27,10 +26,12 @@
 
 .intro-name{
   text-align: center;
+
 }
 
 .intro-name2{
-  text-align: center;
+  text-align: end;
+  padding-right: 150px;
 }
 
   

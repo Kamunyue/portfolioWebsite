@@ -1,59 +1,73 @@
+.about-container{
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  height: 90vh;
+}
+
 .about {
+    padding-top: 50px;
     height: 100%;
-    text-align: center;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row-reverse; 
+    gap: 20px;
   }
-  
-  .about h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100px;
-    margin-bottom: 40px;
+
+  .about-image{
+    flex: 1;
+    padding-left: 50px;
   }
-  
-  .about-content {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .headshot {
-    margin-left: 50px;
-    width: 200px;
-    height: 200px;
+
+  .about-image img{
+    width : 300px;
+    height: 300px;
     border-radius: 50%;
-    object-fit: cover;
   }
   
-  .bio {
-    display: flex;
-    flex-direction: column; 
-    text-align: left;
+  .description{
+    flex: 2;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
   }
   
-  .bio p {
-    font-family: 'Poppins', sans-serif;
+  .description p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: #f9f9f9;
     margin-bottom: 20px;
+    width: 50%;
   }
+
   
-  .bio h3 {
+  
+  .description h3 {
+    color: red;
+    text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
   }
   
-  .bio ul {
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
+  .description ul {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #333;
+    color: #f9f9f9;
   }
   
-  .bio li {
+  .description li {
     margin-bottom: 10px;
   }
-  
+
+  .title{
+    text-align: end;
+    flex: 3;
+  }
+  .title h1{
+    font-size: 100px;
+    color: #f9f9f9;
+    padding: 0;
+  }
+
   @media (max-width: 768px) {
     .about-content {
       flex-direction: column;
